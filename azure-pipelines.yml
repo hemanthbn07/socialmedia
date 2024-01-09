@@ -30,7 +30,6 @@ stages:
             **/*.yml
             **/*.java
           TargetFolder: '$(Build.ArtifactStagingDirectory)'
-          CleanTargetFolder: 
           - task: PublishBuildArtifacts@1
             inputs:
               PathtoPublish: '$(Build.ArtifactStagingDirectory)'
