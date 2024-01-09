@@ -3,11 +3,11 @@ trigger:
 
 strategy:
   matrix:
-   linux:
+    linux:
      operatingSystem: 'ubuntu-latest'
-	 windows:
+	  windows:
 	   operatingSystem: 'windows-latest'
-   mac:
+    mac:
      operatingSystem: 'macos-latest'
 pool:
   vmImage: $(operatingSystem)
